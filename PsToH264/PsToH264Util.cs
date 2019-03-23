@@ -152,7 +152,7 @@ namespace PsToH264
             //循环解析
             while (this.PsBufferCount >= 4)
             {
-                //判断是否包含系统头
+                //判断是否包含包头
                 if (this.psBuffer[0] == 0x00 && this.psBuffer[1] == 0x00
                     && this.psBuffer[2] == 0x01 && this.psBuffer[3] == 0xBA)
                 {
